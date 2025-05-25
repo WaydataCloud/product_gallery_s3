@@ -1,0 +1,26 @@
+<odoo>
+    <record id="view_product_template_form_gallery" model="ir.ui.view">
+        <field name="name">product.template.form.gallery</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook" position="inside">
+                <page string="Gallery">
+                    <field name="gallery_image_ids">
+                        <tree>
+                            <field name="image" widget="image" options="{'preview_image': 'image'}" class="oe_avatar oe_avatar_small"/>
+                            <field name="name"/>
+                            <field name="image_url"/>
+                        </tree>
+                        <form>
+                            <group>
+                                <field name="image" widget="image" options="{'preview_image': 'image'}" class="oe_avatar oe_avatar_small"/>
+                                <field name="name"/>
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

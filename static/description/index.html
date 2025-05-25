@@ -1,0 +1,40 @@
+<section class="container mt-4">
+  <h1 class="mb-3">Product S3 Gallery</h1>
+  <p>
+    This module allows you to upload product images to Amazon S3 or store them directly as binary attachments in Odoo.
+    The option is configurable from the system settings, giving you flexibility to manage storage based on your infrastructure.
+  </p>
+	
+  <h2 class="mt-4">Key Features</h2>
+  <ul>
+    <li>Upload product images to Amazon S3</li>
+    <li>Store images as binary files in Odoo if S3 is not configured</li>
+    <li>Configurable S3 credentials and bucket from Settings</li>
+    <li>Fallback to binary if S3 is unreachable or misconfigured</li>
+    <li>Simple and clean integration with product views</li>
+  </ul>
+
+  <h2 class="mt-4">Configuration</h2>
+  <p>
+    Go to <strong>Settings</strong> → <strong>Gallery</strong> section and configure:
+  </p>
+  <ul>
+    <li>Enable or disable S3 usage</li>
+    <li>AWS Access Key ID</li>
+    <li>AWS Secret Access Key</li>
+    <li>S3 Bucket Name</li>
+  </ul>
+	<h2 class="mt-4">Screenshots</h2>
+	<img src="screenshot1.png" class="img-thumbnail mb-3" alt="S3 Configuration">
+	<img src="screenshot2.png" class="img-thumbnail mb-3" alt="Product Image Upload">
+  <h2 class="mt-4">Notes</h2>
+  <p>
+    This module uses the official boto3 library for S3 communication. Make sure the library is installed on your Odoo server.
+  </p>
+  <pre><code>pip install boto3</code></pre>
+
+  <h2 class="mt-4">Support</h2>
+  <p>
+    For technical support, please contact us at <a href="mailto:support@waydata.mx">support@waydata.mx</a>.
+  </p>
+</section>
